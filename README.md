@@ -1,7 +1,7 @@
 # Spritesheeter
 Generate spritesheets of multiple png from source folder contents
 
-![preview](preview.png?raw=true "preview")
+![preview](preview.png?raw=true "create spritesheet")
 
 # Installation
 ```
