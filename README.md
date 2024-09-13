@@ -1,12 +1,16 @@
 # Spritesheeter
 Generate spritesheets of multiple png from source folder contents
 
+![preview](preview.png?raw=true "preview")
+
 # Installation
-Copy main.py anywhere you like.  
+```
+pip install pillow prompt_toolkit
+``` 
 
 # Use
 ```
-py .\main.py -n Frank -a "Idle, Walk" -p "./src"
+python .\main.py -n Frank -a "Idle, Walk" -p "./src"
 ```
 ## Sprites
 Sprite filename format ```NAME_ACTION_DIRECTION__NR.png```  
