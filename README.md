@@ -1,5 +1,5 @@
 # Spritesheeter
-Generate spritesheets from source folder contents
+Generate spritesheets of multiple png from source folder contents
 
 # Installation
 Copy main.py anywhere you like.  
