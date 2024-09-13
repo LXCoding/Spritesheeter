@@ -140,8 +140,8 @@ class Spritesheet:
 
 
 # console cleanup
-CLEAR_CONSOLE = lambda: os.system('cls')
-CLEAR_CONSOLE()
+# CLEAR_CONSOLE = lambda: os.system('cls')
+# CLEAR_CONSOLE()
 
 # argument parser
 PARSER = argparse.ArgumentParser(
@@ -149,7 +149,7 @@ PARSER = argparse.ArgumentParser(
 	description='Generates a spritesheet from directory of sprites. Filename format needs to be "name_action_direction__0000.png"'
 )
 
-PARSER.add_argument('-n', '--name', help='name')
+PARSER.add_argument('-n', '--name', help='sprite name')
 PARSER.add_argument('-a', '--action', help='actions split by a comma e.g. -a "Idle, Walk"')
 PARSER.add_argument('-p', '--path', help='source folder defaults to ./')
 PARSER.add_argument('-o', '--output', help='export folder defaults to path')
@@ -157,7 +157,7 @@ PARSER.add_argument('-o', '--output', help='export folder defaults to path')
 ARGS = PARSER.parse_args()
 
 # user input
-inName   = ARGS.name   if ARGS.name   is not None else prompt('Name :> ')
+inName   = ARGS.name   if ARGS.name   is not None else prompt('Spritename to look for :> ')
 inPath   = ARGS.path   if ARGS.path   is not None else './'
 inOutput = ARGS.output if ARGS.output is not None else inPath
 inAction = ARGS.action
