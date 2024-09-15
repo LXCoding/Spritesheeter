@@ -1,13 +1,12 @@
 # Spritesheeter
-Generate spritesheets of multiple png from source folder contents
+spritesheet generator using pillow  
+creates flipped version from right to left
 
 ![preview](preview.png?raw=true "create spritesheet")
 
 ```
-pip install pillow prompt_toolkit
-``` 
-```
-python .\main.py -n Frank -a "Idle, Walk" -p "./src"
+python .\main.py
+python .\main.py -a "Idle, Walk" -p "./src" -m True -o "./export"
 ```
 Sprite filename format ```NAME_ACTION_DIRECTION__NR.png```  
 e.g.  
